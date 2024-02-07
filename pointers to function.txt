@@ -1,0 +1,22 @@
+#include <stdio.h>
+void calculate_power(int base, int exp) {
+    long double result = 1.0;
+    while (exp != 0) {
+        result *= base;
+        --exp;
+    }
+    printf("Answer = %.0Lf", result);
+}
+int main() {
+    int base, exp;
+    printf("Enter a base number: ");
+    scanf("%d", &base);
+    printf("Enter an exponent: ");
+    scanf("%d", &exp);
+    calculate_power(base, exp);
+    return 0;
+}
+
+Enter a base number: 5
+Enter an exponent: 2
+Answer = 25

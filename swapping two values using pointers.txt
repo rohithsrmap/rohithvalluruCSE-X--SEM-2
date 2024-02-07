@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+void swap(int *a, int *b)
+ {
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+ }
+
+int main()
+ {
+    int num1, num2;
+    int *ptr1, *ptr2;
+    printf("Enter two numbers:\n");
+    scanf("%d%d", &num1, &num2);
+    ptr1 = &num1;
+    ptr2 = &num2;
+
+    swap(ptr1, ptr2);
+
+    printf("After swapping:\n");
+    printf("Number 1 = %d\n", num1);
+    printf("Number 2 = %d\n", num2);
+
+    return 0;
+} 
+
+
+
+
+Enter two numbers:
+18 45
+After swapping:
+Number 1 = 45
+Number 2 = 18

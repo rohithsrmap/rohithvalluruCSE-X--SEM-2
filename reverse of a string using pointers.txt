@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char *s, str[10];
+    int len, i;
+    printf("Enter a string: ");
+    gets(str);
+    s=str;
+    len = strlen(str);
+    printf("The reverse of the string is: ");
+    for (i = len; i >= 0; i--)
+    {
+        printf("%c", *(s + i));
+    }
+    return 0;
+}
+
+
+OUTPUT:
+Enter a string:SRMAP
+The reverse of the string is:PAMRS
