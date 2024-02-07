@@ -1,0 +1,37 @@
+#include <stdio.h>
+int main()  
+{  
+    int arr[10]; 
+    int i;  
+    printf("\n\nRead and Print elements of an array:\n");
+  
+    printf("Input 10 elements in the array :\n");  
+    for(i=0; i<10; i++)  
+    {  
+	    printf("element - %d : ",i); 
+        scanf("%d", &arr[i]);  
+    }  
+    printf("\nElements in array are: ");  
+    for(i=0; i<10; i++)  
+    {  
+        printf("%d  ", arr[i]);     
+    } 
+    printf("\n");
+	return 0;	
+}
+
+
+OUTPUT:
+Read and Print elements of an array:
+Input 10 elements in the array :
+element - 0 : 45
+element - 1 : 23
+element - 2 : 07
+element - 3 : 18
+element - 4 : 65
+element - 5 : 63
+element - 6 : 29
+element - 7 : 99
+element - 8 : 27
+element - 9 : 9
+Elements in array are: 45  23  7  18  65  63  29  99  27  9  
